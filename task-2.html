@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 16px;
+        background-color: #f9f9f9;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      .gallery li {
+        flex: 0 1 calc((100% - 48px) / 3);
+        box-sizing: border-box;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      a {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+
+    <ul class="gallery"></ul>
+
+    <script src="./js/task-2.js" type="module"></script>
+  </body>
+</html>
